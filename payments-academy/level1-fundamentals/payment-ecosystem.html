@@ -1,249 +1,250 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment Ecosystem | SkillWorld</title>
-
     <link rel="stylesheet" href="payment-ecosystem.css">
 </head>
 <body>
-<div class="logo">
-    💳 SkillWorld
-</div>
 
-<nav>
-    <a href="index.html">← Back to Level 1</a>
-</nav>
-<div class="hero-content">
+<header class="header">
+    <div class="logo">💳 SkillWorld</div>
+    <nav>
+        <a href="index.html">← Back to Level 1</a>
+    </nav>
+</header>
 
-    <span class="badge">
-        LEVEL 1 • PAYMENT FUNDAMENTALS
-    </span>
-
+<section class="hero">
+    <span class="badge">LEVEL 1 • PAYMENT FUNDAMENTALS</span>
     <h1>Payment Ecosystem</h1>
+    <p>
+        Learn how customers, merchants, gateways, processors,
+        networks and banks work together to move money securely.
+    </p>
+</section>
+
+<section class="section">
+    <h2>What is a Payment Ecosystem?</h2>
+    <p>
+        A Payment Ecosystem is a collection of organizations,
+        technologies and processes that enable electronic payments.
+    </p>
+    <p>
+        Every successful payment involves multiple participants
+        communicating securely behind the scenes.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Why Does It Exist?</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Security</h3>
+            <p>Protect customer payment information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Trust</h3>
+            <p>Ensure money reaches the right destination.</p>
+        </div>
+
+        <div class="card">
+            <h3>Scalability</h3>
+            <p>Handle millions of transactions daily.</p>
+        </div>
+
+        <div class="card">
+            <h3>Compliance</h3>
+            <p>Meet banking and regulatory requirements.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="section">
+
+    <h2>Key Participants</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Customer</h3>
+            <p>Initiates the payment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Merchant</h3>
+            <p>Receives the payment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Payment Gateway</h3>
+            <p>Captures and secures payment data.</p>
+        </div>
+
+        <div class="card">
+            <h3>Processor</h3>
+            <p>Routes payment requests.</p>
+        </div>
+
+        <div class="card">
+            <h3>Card Network</h3>
+            <p>Visa, Mastercard, RuPay.</p>
+        </div>
+
+        <div class="card">
+            <h3>Issuer Bank</h3>
+            <p>Customer's bank.</p>
+        </div>
+
+        <div class="card">
+            <h3>Acquirer Bank</h3>
+            <p>Merchant's bank.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Payment Flow</h2>
+
+    <div class="flow">
+
+        <div class="flow-box">Customer</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Merchant</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Gateway</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Processor</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Network</div>
+        <div class="arrow">→</div>
+
+        <div class="flow-box">Issuer</div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Transaction Lifecycle</h2>
+
+    <ol>
+        <li>Customer initiates payment.</li>
+        <li>Merchant receives request.</li>
+        <li>Gateway captures data.</li>
+        <li>Processor routes transaction.</li>
+        <li>Network forwards request.</li>
+        <li>Issuer validates account.</li>
+        <li>Authorization response generated.</li>
+        <li>Merchant receives approval.</li>
+        <li>Clearing occurs.</li>
+        <li>Settlement transfers funds.</li>
+    </ol>
+
+</section>
+
+<section class="section">
+
+    <h2>Authorization vs Authentication</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Authentication</h3>
+            <p>Verifies customer identity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Authorization</h3>
+            <p>Verifies whether payment is allowed.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Clearing vs Settlement</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Clearing</h3>
+            <p>Exchange of transaction information.</p>
+        </div>
+
+        <div class="card">
+            <h3>Settlement</h3>
+            <p>Actual transfer of money.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Real World Example</h2>
+
+    <div class="example-box">
+
+        <h3>Amazon Purchase</h3>
+
+        <ul>
+            <li>Customer = You</li>
+            <li>Merchant = Amazon</li>
+            <li>Network = Visa</li>
+            <li>Issuer = Your Bank</li>
+            <li>Acquirer = Amazon Bank</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Interview Questions</h2>
+
+    <div class="question">
+        <h3>What is a Payment Ecosystem?</h3>
+        <p>A network of participants that enable digital payments.</p>
+    </div>
+
+    <div class="question">
+        <h3>Who are the key participants?</h3>
+        <p>Customer, Merchant, Gateway, Processor, Network, Issuer, Acquirer.</p>
+    </div>
+
+</section>
+
+<section class="summary">
+
+    <h2>Key Takeaway</h2>
 
     <p>
-        The Payment Ecosystem is the foundation of all digital payments.
-        Every card payment, UPI payment, wallet transaction and bank transfer
-        depends on multiple participants working together behind the scenes.
+        Understanding the Payment Ecosystem is the foundation
+        for learning Cards, UPI, Fraud, Settlement and Payment Architecture.
     </p>
 
-</div>
-<h2>What is a Payment Ecosystem?</h2>
+</section>
 
-<p>
-    A Payment Ecosystem is a collection of participants, systems,
-    technologies and processes that work together to facilitate
-    electronic payments between customers and merchants.
-</p>
+<footer>
+    © 2026 SkillWorld | Payments Academy
+</footer>
 
-<p>
-    Whenever a customer initiates a payment, multiple entities
-    communicate to validate, authorize, process, clear and settle
-    the transaction securely.
-</p>
-<h2>Why Does the Payment Ecosystem Exist?</h2>
-
-<div class="card-grid">
-
-    <div class="card">
-        <h3>Security</h3>
-        <p>Protect customer and merchant payment information.</p>
-    </div>
-
-    <div class="card">
-        <h3>Trust</h3>
-        <p>Ensure money reaches the correct destination.</p>
-    </div>
-
-    <div class="card">
-        <h3>Scalability</h3>
-        <p>Handle millions of transactions every day.</p>
-    </div>
-
-    <div class="card">
-        <h3>Compliance</h3>
-        <p>Meet regulatory and banking requirements.</p>
-    </div>
-
-</div>
-<h2>Key Participants</h2>
-
-<div class="card-grid">
-
-    <div class="card">
-        <h3>🧑 Customer</h3>
-        <p>The person making the payment.</p>
-    </div>
-
-    <div class="card">
-        <h3>🏪 Merchant</h3>
-        <p>The business receiving payment.</p>
-    </div>
-
-    <div class="card">
-        <h3>🚪 Payment Gateway</h3>
-        <p>Captures and securely transmits payment data.</p>
-    </div>
-
-    <div class="card">
-        <h3>⚙ Payment Processor</h3>
-        <p>Routes payment transactions between systems.</p>
-    </div>
-
-    <div class="card">
-        <h3>🌐 Card Network</h3>
-        <p>Visa, Mastercard, RuPay and Amex.</p>
-    </div>
-
-    <div class="card">
-        <h3>🏦 Issuer Bank</h3>
-        <p>Bank that issued the customer's card.</p>
-    </div>
-
-    <div class="card">
-        <h3>🏛 Acquirer Bank</h3>
-        <p>Merchant's bank responsible for receiving funds.</p>
-    </div>
-
-</div>
-<h2>Payment Transaction Flow</h2>
-
-<div class="flow">
-
-    <div class="flow-box">Customer</div>
-    <div class="arrow">→</div>
-
-    <div class="flow-box">Merchant</div>
-    <div class="arrow">→</div>
-
-    <div class="flow-box">Gateway</div>
-    <div class="arrow">→</div>
-
-    <div class="flow-box">Processor</div>
-    <div class="arrow">→</div>
-
-    <div class="flow-box">Network</div>
-    <div class="arrow">→</div>
-
-    <div class="flow-box">Issuer Bank</div>
-
-</div>
-<h2>Step-by-Step Transaction Lifecycle</h2>
-
-<ol>
-    <li>Customer initiates payment.</li>
-    <li>Merchant receives payment request.</li>
-    <li>Gateway captures payment details.</li>
-    <li>Processor routes transaction.</li>
-    <li>Network forwards request.</li>
-    <li>Issuer validates funds and risk.</li>
-    <li>Authorization response generated.</li>
-    <li>Merchant receives approval.</li>
-    <li>Clearing occurs.</li>
-    <li>Settlement transfers funds.</li>
-</ol>
-<h2>Authorization vs Authentication</h2>
-
-<div class="card-grid">
-
-    <div class="card">
-        <h3>Authentication</h3>
-        <p>
-            Verifies that the customer is genuine.
-            Example: OTP, PIN, Biometric.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Authorization</h3>
-        <p>
-            Verifies whether the payment can be approved.
-            Example: Available balance check.
-        </p>
-    </div>
-
-</div>
-<h2>Clearing vs Settlement</h2>
-
-<div class="card-grid">
-
-    <div class="card">
-        <h3>Clearing</h3>
-        <p>
-            Exchange of transaction information between parties.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Settlement</h3>
-        <p>
-            Actual movement of money between banks.
-        </p>
-    </div>
-
-</div>
-<h2>Real World Example</h2>
-
-<div class="example-box">
-
-    <h3>Amazon Purchase Example</h3>
-
-    <p>
-        You purchase a laptop worth ₹50,000 using a Visa Card.
-    </p>
-
-    <ul>
-        <li>Customer = You</li>
-        <li>Merchant = Amazon</li>
-        <li>Gateway = Payment Gateway Provider</li>
-        <li>Processor = Payment Processor</li>
-        <li>Network = Visa</li>
-        <li>Issuer = Your Bank</li>
-        <li>Acquirer = Amazon's Bank</li>
-    </ul>
-
-</div>
-<h2>Interview Questions</h2>
-
-<div class="question">
-
-    <h3>What is a Payment Ecosystem?</h3>
-
-    <p>
-        A collection of participants, systems and processes
-        that work together to facilitate digital payments.
-    </p>
-
-</div>
-
-<div class="question">
-
-    <h3>Who are the key participants?</h3>
-
-    <p>
-        Customer, Merchant, Gateway, Processor,
-        Network, Issuer and Acquirer.
-    </p>
-
-</div>
-
-<div class="question">
-
-    <h3>What is the role of a Payment Gateway?</h3>
-
-    <p>
-        To securely collect and transmit payment information.
-    </p>
-
-</div>
-<h2>Key Takeaway</h2>
-
-<p>
-    The Payment Ecosystem is the foundation of every digital payment.
-    Understanding this ecosystem is essential before learning Cards,
-    UPI, Fraud, Settlement, ISO 20022 and Payments Architecture.
-</p>
-© 2026 SkillWorld | Payments Academy
 </body>
 </html>
