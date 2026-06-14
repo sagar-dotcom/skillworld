@@ -1,41 +1,71 @@
-body{
-background:#071120;
-color:white;
-font-family:'Segoe UI',sans-serif;
-line-height:1.8;
+*{ margin:0; padding:0; box-sizing:border-box; font-family:‘Segoe UI’,sans-serif; }
+body{ background:#071120; color:white; line-height:1.7; }
+/* ========================== HEADER ========================== */
+.header{ display:flex; justify-content:space-between; align-items:center; padding:20px 50px; background:#0f172a; position:sticky; top:0; z-index:1000; border-bottom:1px solid rgba(255,255,255,0.1); }
+.logo{ font-size:30px; font-weight:700; color:#38bdf8; }
+.header a{ text-decoration:none; color:white; padding:10px 18px; background:#1e293b; border-radius:10px; transition:.3s; }
+.header a:hover{ background:#2563eb; }
+/* ========================== HERO ========================== */
+.hero{ padding:120px 30px; text-align:center; background:linear-gradient( 135deg, #071120, #0f172a ); }
+.badge{ display:inline-block; padding:10px 18px; border-radius:30px; background:#2563eb; font-size:14px; font-weight:700; margin-bottom:25px; }
+.hero h1{ font-size:72px; margin-bottom:25px; }
+.hero p{ max-width:900px; margin:auto; font-size:22px; color:#cbd5e1; }
+/* ========================== COMMON SECTION ========================== */
+.section{ max-width:1300px; margin:auto; padding:80px 30px; }
+.section h2{ font-size:42px; margin-bottom:25px; color:#38bdf8; }
+.section p{ font-size:18px; color:#dbeafe; margin-bottom:15px; }
+/* ========================== CARDS ========================== */
+.card-grid{ display:grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:30px;
+}
+.card{ background:#0f172a; padding:25px; border-radius:18px; transition:.3s; border:1px solid transparent; }
+.card:hover{ transform:translateY(-8px); border-color:#38bdf8; }
+.card h3{ margin-bottom:15px; color:#38bdf8; }
+.card p{ color:#cbd5e1; }
+/* ========================== PAYMENT FLOW ========================== */
+.flow{ display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:15px; margin-top:40px; }
+.flow-box{ background:#2563eb; padding:18px 25px; border-radius:12px; font-weight:700; min-width:140px; text-align:center; }
+.arrow{ font-size:32px; color:#38bdf8; }
+/* ========================== LISTS ========================== */
+ol, ul{ padding-left:25px; margin-top:20px; }
+ol li, ul li{ margin-bottom:12px; color:#dbeafe; font-size:18px; }
+/* ========================== EXAMPLE BOX ========================== */
+.example-box{ background:#0f172a; padding:35px; border-radius:20px; border-left:5px solid #38bdf8; }
+.example-box h3{ margin-bottom:20px; color:#38bdf8; }
+/* ========================== INTERVIEW QUESTIONS ========================== */
+.question{ background:#0f172a; padding:25px; border-radius:18px; margin-bottom:20px; }
+.question h3{ color:#38bdf8; margin-bottom:15px; }
+/* ========================== SUMMARY ========================== */
+.summary{ text-align:center; padding:100px 30px; background:#0f172a; }
+.summary h2{ font-size:50px; margin-bottom:25px; color:#38bdf8; }
+.summary p{ max-width:900px; margin:auto; font-size:22px; color:#cbd5e1; }
+/* ========================== FOOTER ========================== */
+footer{ text-align:center; padding:30px; background:#020617; color:#94a3b8; }
+/* ========================== RESPONSIVE ========================== */
+@media(max-width:768px){
+.hero h1{
+    font-size:48px;
 }
 
-.content-section,
-.participants,
-.flow-section,
-.interview-section,
-.summary{
-max-width:1200px;
-margin:auto;
-padding:80px 30px;
+.hero p{
+    font-size:18px;
 }
 
-h2{
-color:#38bdf8;
-margin-bottom:25px;
-font-size:42px;
+.section h2{
+    font-size:32px;
 }
 
-.participant-card{
-background:#0f172a;
-padding:25px;
-margin-bottom:20px;
-border-radius:15px;
+.flow{
+    flex-direction:column;
 }
 
-.participant-card h3{
-margin-bottom:10px;
+.arrow{
+    transform:rotate(90deg);
 }
 
-ol{
-padding-left:25px;
+.header{
+    flex-direction:column;
+    gap:15px;
 }
-
-ol li{
-margin-bottom:12px;
 }
