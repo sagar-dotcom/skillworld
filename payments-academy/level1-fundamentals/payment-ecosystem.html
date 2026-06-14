@@ -42,11 +42,23 @@ money from a customer to a merchant.
 <h2>What is a Payment Ecosystem?</h2>
 
 <p>
-Whenever a customer pays online or at a store,
-multiple entities work behind the scenes.
-The customer only sees a successful payment,
-but several systems exchange messages and money
-before the transaction is completed.
+A Payment Ecosystem is a network of organizations,
+banks, payment providers, networks and technology
+platforms that work together to enable electronic
+payments between customers and merchants.
+</p>
+
+<p>
+Whenever a customer makes a payment using a card,
+UPI application, wallet or bank account, multiple
+participants interact behind the scenes to validate,
+authorize, process, clear and settle the transaction.
+</p>
+
+<p>
+The customer only sees a successful transaction,
+but several systems exchange messages and funds
+before the payment is completed.
 </p>
 
 </section>
@@ -85,68 +97,59 @@ before the transaction is completed.
 
 <section class="participants">
 
-<h2>Key Participants</h2>
+<h2>Key Participants in the Payment Ecosystem</h2>
 
-<div class="topic-grid">
-
-<div class="topic-card">
+<div class="participant-card">
 <h3>Customer</h3>
-<p>Person making the payment.</p>
+<p>The person initiating the payment.</p>
 </div>
 
-<div class="topic-card">
+<div class="participant-card">
 <h3>Merchant</h3>
-<p>Business receiving the payment.</p>
+<p>The business receiving payment for goods or services.</p>
 </div>
 
-<div class="topic-card">
+<div class="participant-card">
 <h3>Payment Gateway</h3>
-<p>Securely captures payment information.</p>
+<p>Securely captures and transmits payment information.</p>
 </div>
 
-<div class="topic-card">
-<h3>Processor</h3>
-<p>Routes transactions between systems.</p>
+<div class="participant-card">
+<h3>Payment Processor</h3>
+<p>Routes payment transactions between systems.</p>
 </div>
 
-<div class="topic-card">
+<div class="participant-card">
 <h3>Card Network</h3>
-<p>Visa, Mastercard, RuPay etc.</p>
+<p>Visa, Mastercard, RuPay or Amex act as communication networks.</p>
 </div>
 
-<div class="topic-card">
+<div class="participant-card">
 <h3>Issuer Bank</h3>
-<p>Customer's bank issuing the card.</p>
+<p>The bank that issued the customer's card.</p>
 </div>
 
+<div class="participant-card">
+<h3>Acquirer Bank</h3>
+<p>The merchant's bank responsible for receiving funds.</p>
 </div>
 
 </section>
 
-<section class="content-section">
+<section class="flow-section">
 
-<h2>Payment Flow Example</h2>
+<h2>Payment Transaction Flow</h2>
 
-<ol class="steps">
-
-<li>Customer places an order.</li>
-
+<ol>
+<li>Customer initiates payment.</li>
 <li>Merchant sends payment request.</li>
-
-<li>Gateway receives transaction.</li>
-
-<li>Processor routes request.</li>
-
-<li>Card Network forwards message.</li>
-
-<li>Issuer Bank verifies balance.</li>
-
+<li>Gateway encrypts payment data.</li>
+<li>Processor routes transaction.</li>
+<li>Card Network forwards request.</li>
+<li>Issuer Bank validates customer account.</li>
 <li>Authorization response is returned.</li>
-
-<li>Merchant receives approval.</li>
-
-<li>Settlement happens later.</li>
-
+<li>Merchant receives payment status.</li>
+<li>Clearing and settlement occur later.</li>
 </ol>
 
 </section>
