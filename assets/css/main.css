@@ -112,6 +112,9 @@ background:#0f172a;
 padding:30px;
 border-radius:20px;
 transition:.3s;
+text-decoration:none;
+color:white;
+display:block;
 }
 
 .card:hover{
